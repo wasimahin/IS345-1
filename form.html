@@ -1,0 +1,76 @@
+
+
+Form · HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Favorite Game Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+  <h2>What is your favorite game?</h2>
+  <h4>Fill out the form below</h4>
+ 
+  <p>
+    <a href="index.html">Back to Home</a>
+  </p>
+ 
+  <form>
+ 
+    <p>
+      <label for="name">Game Name:</label><br>
+      <input type="text" id="name" name="name" placeholder="Enter game name">
+    </p>
+ 
+    <p>
+      <label for="password">Account Password:</label><br>
+      <input type="password" id="password" name="password" placeholder="Enter a password">
+    </p>
+ 
+    <p>
+      <strong>Favorite Game Genre:</strong><br>
+      <input type="radio" id="action" name="genre" value="action">
+      <label for="action">Action / Adventure</label><br>
+ 
+      <input type="radio" id="rpg" name="genre" value="rpg">
+      <label for="rpg">RPG</label><br>
+ 
+      <input type="radio" id="story" name="genre" value="story">
+      <label for="story">Story-Driven / Chill</label>
+    </p>
+ 
+    <p>
+      <strong>Gameplay or Story or both?:</strong><br>
+      <input type="checkbox" id="gameplay" name="notify" value="gameplay">
+      <label for="gameplay">Gameplay</label><br>
+ 
+      <input type="checkbox" id="story" name="notify" value="story">
+      <label for="story">Story</label>
+    </p>
+ 
+    <p>
+      <label for="games">Games You'd Like Reviewed:</label><br>
+      <select id="games" name="games" multiple size="4">
+        <option value="demons-souls">Demon's Souls</option>
+        <option value="astro-bot">Astro Bot</option>
+        <option value="clair-obscur">Clair Obscur: Expedition 33</option>
+        <option value="helldivers2">Helldivers 2</option>
+      </select>
+    </p>
+ 
+    <p>
+      <label for="request-date">Requested By Date:</label><br>
+      <input type="date" id="request-date" name="request-date" required>
+    </p>
+ 
+    <p>
+      <input type="submit" value="Submit Request">
+    </p>
+ 
+  </form>
+ 
+</body>
+</html>
+ 

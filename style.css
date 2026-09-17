@@ -1,0 +1,45 @@
+body {
+  font: Helvetica;
+}
+
+p {
+  font: Helvetica;
+}
+
+h1, h2 {
+  font: "Courier New";
+  color: red;
+}
+
+a:link {
+  color: red;
+}
+
+a:visited {
+  color: green;
+}
+
+
+input[type="submit"]:hover {
+  background-color: red;
+}
+
+input[type="submit"]:active {
+  background-color: green;
+}
+
+ul {
+  list-style-type: square;
+}
+
+ol {
+  list-style-type: lower-roman;
+}
+
+tr:nth-child(even) {
+  background-color: lightgray;
+}
+
+tr:hover {
+  background-color: lightblue;
+}
