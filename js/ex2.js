@@ -1,27 +1,8 @@
-function calculate(number1, number2, operation) {
-  let result;
-
-  switch (operation) {
-    case "+":
-      result = number1 + number2;
-      break;
-    case "-":
-      result = number1 - number2;
-      break;
-    case "*":
-      result = number1 * number2;
-      break;
-    case "/":
-      result = number1 / number2;
-      break;
+const displayText400 = () => {
+  const courses = document.getElementsByClassName("400level");
+  for (const course of courses) {
+    console.log(course.textContent);
   }
+};
 
-  return `${number1} ${operation} ${number2} = ${result}`;
-}
-
-let number1 = Number(prompt("Enter the first number:"));
-let number2 = Number(prompt("Enter the second number:"));
-let operation = prompt("Enter an operation (+, -, *, /):");
-
-let output = calculate(number1, number2, operation);
-console.log(output);
+displayText400();
